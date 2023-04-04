@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&family=Peddana&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&family=Peddana&family=Satisfy&family=Yanone+Kaffeesatz:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1500px;
+    margin: auto;
+    background-color: slategrey;
+    font-family: 'Bitter', serif;
+}
+.nav{
+    display: flex;
+    background-color: #c3b4c5e0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.list a{
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 30px;
+}
+.list a:hover{
+    background-color:#26a3c9 ;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+/* banner section */
+.banner{
+    display: flex;
+    grid-template: repeat(2 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+button{
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: darkgrey;
+    padding: 15px;
+    color: #26a3c9;
+    margin-top: 30px;
+}
+/* used for Heading */
+.sec{
+    /* border: 1px solid burlywood; */
+    height: 700px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    background-color: rgba(95, 108, 121, 0.397);
+}
+/* About Section */
+.align{
+    margin-top: 10px;
+    text-align: left
+}
+/*   Skill Section    */
+.skill{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.parcantage{
+    background-color:rgba(156, 147, 147, 0.849);
+    height: 30px;
+    width: 500px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.skill-1{
+    height: 30px;
+    background-color: #23d490da;
+}
+/*    Services     */
+.card{
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid goldenrod; */
+    gap: 50px ;
+    padding: 100px 0;
+}
+.packet{
+    margin: 20px 10px;
+    box-shadow: 0 4px 8px 0;
+    text-align: center;
+}
+.packet h5{
+    font-weight:500;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.packet p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+/*     From       */
+form{
+    text-align: left; 
+    font-size: 30px;
+    margin-top: 50px;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+}
+input[type=email] {
+    width: 50%;
+    padding: 12px 10px;
+}
+.button{
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Bitter', serif;
+    font-weight: 500;
+}
