@@ -86,6 +86,25 @@ button{
     height: 30px;
     background-color: #23d490da;
 }
+/*     Blog     */
+#blog{
+    height: auto;
+}
+.name{
+    font-size: 25px;
+    font-weight: 600;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 50px ;
+}
+.blog img{
+    width: 400px;
+    box-shadow: 5px 5px 5px 5px rgba(3, 4, 5, 0.712);
+    border-radius: 20%;
+    margin-top: 50px;
+}
 /*    Services     */
 .card{
     text-align: left;
@@ -128,3 +147,9 @@ input[type=email] {
     font-family: 'Bitter', serif;
     font-weight: 500;
 }
+/* Footer */
+footer{
+    text-align: Center;
+    align-items: center;
+}
+
