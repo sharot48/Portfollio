@@ -41,7 +41,6 @@ body{
 /* banner section */
 .banner{
     display: flex;
-    grid-template: repeat(2 1fr);
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
@@ -57,7 +56,7 @@ button{
 /* used for Heading */
 .sec{
     /* border: 1px solid burlywood; */
-    height: 700px;
+    height: auto;
     font-size: 50px;
     text-align: center;
     margin-bottom: 50px;
@@ -70,6 +69,16 @@ button{
     text-align: left
 }
 /*   Skill Section    */
+.main-skill{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 50px;
+}
+.skills{
+    display:flex; 
+    justify-content: space-between;
+}
+
 .skill{
     text-align: left;
     font-size: 30px;
@@ -85,11 +94,9 @@ button{
 .skill-1{
     height: 30px;
     background-color: #23d490da;
+    width: 90%;
 }
 /*     Blog     */
-#blog{
-    height: auto;
-}
 .name{
     font-size: 25px;
     font-weight: 600;
@@ -101,6 +108,7 @@ button{
 }
 .blog img{
     width: 400px;
+    height: 300px;
     box-shadow: 5px 5px 5px 5px rgba(3, 4, 5, 0.712);
     border-radius: 20%;
     margin-top: 50px;
@@ -152,4 +160,27 @@ footer{
     text-align: Center;
     align-items: center;
 }
-
+@media screen and (min-width: 250px) and (max-width: 600px) {
+    .list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
+.banner{
+    display: grid;
+    height: auto;
+}
+.skills-1{
+   display: flex;
+   flex-direction: row;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.massage{
+    width: 300px;
+}
+.main-skill{
+    display: grid;   
+}
+}
