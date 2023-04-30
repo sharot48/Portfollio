@@ -8,7 +8,7 @@
 }
 body{
     max-width: 1500px;
-    margin: auto;
+    /* margin: auto; */
     background-color: slategrey;
     font-family: 'Bitter', serif;
 }
@@ -34,9 +34,11 @@ body{
     font-size: 30px;
 }
 .list a:hover{
-    background-color:#26a3c9 ;
+    background-color:   rgba(255, 255, 255, 0.623) ;
     padding: 0 10px;
-    border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
 }
 /* banner section */
 .banner{
@@ -52,6 +54,7 @@ button{
     padding: 15px;
     color: #26a3c9;
     margin-top: 30px;
+    cursor: pointer;
 }
 /* used for Heading */
 .sec{
@@ -68,35 +71,71 @@ button{
     margin-top: 10px;
     text-align: left
 }
+
 /*   Skill Section    */
-.main-skill{
-    display: flex; 
-    justify-content: space-between; 
-    padding: 50px;
-}
-.skills{
-    display:flex; 
-    justify-content: space-between;
+
+.skill-p
+{
+    text-align: left;
+    tab-size: 25px;
+    margin: 20px 0;
+    font-weight: normal;
+
 }
 
-.skill{
-    text-align: left;
-    font-size: 30px;
+.skill-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.skill
+{
+    margin-left: 25px;
+    width:80%
+    
+}
+.skill-heading
+{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom:10px;
     margin-top: 50px;
+    font-size: 30px;
 }
-.parcantage{
-    background-color:rgba(156, 147, 147, 0.849);
+.skill-bgc
+{
+    width:100%; 
+    background-color:#778da9; 
     height: 30px;
-    width: 500px;
-    margin-bottom: 30px;
-    margin-top: 5px;
 }
-.skill-1{
+.skill-bar-html
+{
+    width:98%; 
+    background-color:#e0e1dd; 
     height: 30px;
-    background-color: #23d490da;
-    width: 90%;
 }
+.skill-bar-css
+{
+    width:87%; 
+    background-color:#e0e1dd; 
+    height: 30px;
+}
+.skill-bar-bootstrap
+{
+    width:50%; 
+    background-color:#e0e1dd; 
+    height: 30px;  
+}
+.skill-bar-javascript
+{
+    width:10%; 
+    background-color:#e0e1dd; 
+    height: 30px;    
+}
+
 /*     Blog     */
+
 .name{
     font-size: 25px;
     font-weight: 600;
@@ -160,23 +199,31 @@ footer{
     text-align: Center;
     align-items: center;
 }
-@media screen and (min-width: 250px) and (max-width: 600px) {
+@media screen and (min-width: 250px) and (max-width: 800px){
+    
+    .nav{
+        background-color: rgba(128, 128, 128, 0.37);
+    }
+    
     .list{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
 }
 .banner{
     display: grid;
     height: auto;
 }
-.skills-1{
-   display: flex;
-   flex-direction: row;
+.skill-wrapper
+{
+  display: grid; 
+  grid-template-columns: repeat(1,1fr); 
+  text-align: 20px auto;
 }
 .blog{
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
+.card{display: grid; grid-template-columns: repeat(1,1fr);}
 .massage{
     width: 300px;
 }
